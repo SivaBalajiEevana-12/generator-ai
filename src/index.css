@@ -36,3 +36,15 @@ code {
   background-blend-mode: screen;
   background-color: #fff;
 }
+ingredients-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ingredients-form > input{
+  height:1 rem;
+  width:2 rem;
+  margin-right: 150px;
+  background-color: black;
+}

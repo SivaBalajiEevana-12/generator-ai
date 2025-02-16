@@ -2,8 +2,28 @@ import { useState } from "react";
 import List from "./components/List";
 import Data from "./components/Data";
 import { getRecipehc } from "./Ai";
+import "./Mains.css";
 
 export default function Mains(){ 
+    const sty1={
+        marginTop:"50px",
+        color:"black",
+        height: "40px",
+        width: "300px",
+        fontSize: "20px",
+        marginRight:"50px",
+        marginBottom:"50px"
+      }
+    const sty2={
+        marginTop:"50px",
+        color:"black",
+        height: "40px",
+        width: "200px",
+        fontSize: "20px",
+        marginRight:"50px",
+        marginBottom:"50px",
+        backgroundColor:"orange"
+      }
     const [ingredients, setIngredients] = useState([]);
     const [Reciepe, setReciepe] = useState(true);
     const [recipeData, setRecipeData] = useState("");
@@ -30,12 +50,12 @@ export default function Mains(){
     }
     return(
         <main>
-        <form action={handle}>
+        <form action={handle} className="ingredients-form">
             <input type="text"
             arail-label="ingredients"
             name="ingredients"
-            />
-            <button>+Add Ingredient</button>
+            style={sty1}/>
+            <button style={sty2}>+Add Ingredient</button>
         </form>
 
         {ingredients.length > 0 && <List

@@ -1,7 +1,8 @@
 import ReactMarkDown from "react-markdown";
+import "../App.css"
 export default function Data(props){ 
 return(
-    <data>
+    <data className="daata">
         <ReactMarkDown>
             {props.recipeData}
         </ReactMarkDown>
