@@ -61,7 +61,7 @@
 
   list-style-type: none;
   margin: 0;
-  border:2px solid black;
+  /* border:2px solid black; */
 }
 .daata>ul>li{
   list-style-type: none;
